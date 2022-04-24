@@ -1,4 +1,5 @@
 ---
+##!!!! nincs sourcelist beállítva
 - name: Install the Proxmox Backup Client
   apt:
     name: proxmox-backup-client
@@ -8,3 +9,6 @@
   apt:
     name: expect
     state: present
+  when: 
+    - config.client.encrypt is defined
+    - config.client.encrypt.enable

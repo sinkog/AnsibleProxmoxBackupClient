@@ -13,7 +13,7 @@
   loop_control:
     loop_var: required_key
     
-- name: "Check required proxmox_backup.archive dictionary keys"
+- name: "Check required proxmox_backup.archives dictionary keys"
   include_tasks: check_archive_keys.yaml
   with_items: "{{ proxmox_backup.client.archives }}"
   loop_control:

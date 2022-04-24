@@ -1,18 +1,16 @@
----
 galaxy_info:
   role_name: Proxmox-Backup-Client
-  author: Austin Arbour
+  origin author: Austin Arbour (https://github.com/djarbz/ansible-proxmox-backup-client.git)
+  author: Gábor Zoltán Sinkó
   description: Ansible role to install and configure the Proxmox Backup Client.
-
   license: MIT (Expat)
-  min_ansible_version: 2.5
-
+  min_ansible_version: 2.9
   platforms:
   - name: Debian
     versions:
     - buster
-
-  tags:
+  galaxy_tags: 
   - system
 
 dependencies: []
+  

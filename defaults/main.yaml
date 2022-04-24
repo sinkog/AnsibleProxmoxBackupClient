@@ -58,6 +58,7 @@ default_config:
     schedule:
       calendar: '*-*-* 4:00:00' # Daily at 4am
       runifmissed: no
+      enable: false
     # archives:
     #   - name: root
     #     path: /
